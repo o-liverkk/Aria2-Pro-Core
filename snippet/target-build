@@ -95,7 +95,7 @@ JEMALLOC_BUILD() {
 ARIA2_BUILD() {
     ARIA2_CODE_GET
     ./configure \
-        --prefix=${ARIA2_PREFIX:-'/usr/loacl'} \
+        --prefix=${ARIA2_PREFIX:-'/usr/local'} \
         --with-libz \
         --with-libcares \
         --with-libexpat \
