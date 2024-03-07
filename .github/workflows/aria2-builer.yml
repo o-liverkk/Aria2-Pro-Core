@@ -80,6 +80,7 @@ jobs:
       run: |
         ./aria2c https://raw.githubusercontent.com/P3TERX/aria2.conf/master/dht.dat
         ./aria2c https://raw.githubusercontent.com/P3TERX/aria2.conf/master/dht6.dat
+        ./aria2c https://releases.ubuntu.com/23.10/ubuntu-23.10-live-server-amd64.iso.torrent
         ./aria2c \
           --seed-time=0 \
           --enable-dht6=true \
@@ -87,4 +88,4 @@ jobs:
           --dht-file-path6="$PWD/dht6.dat" \
           --dht-entry-point='dht.transmissionbt.com:6881' \
           --dht-entry-point6='dht.transmissionbt.com:6881' \
-          "$(curl -fsSL https://releases.ubuntu.com/23.10/ubuntu-23.10-live-server-amd64.iso.torrent)"
+          ubuntu-23.10-live-server-amd64.iso.torrent
